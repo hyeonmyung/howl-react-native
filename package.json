@@ -1,5 +1,5 @@
 {
-  "name": "@xeptember/react-native",
+  "name": "rn-boilerplate",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,11 +7,15 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "rndebugger-open"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.2",
     "react": "17.0.2",
-    "react-native": "0.68.2"
+    "react-native": "0.68.2",
+    "react-native-debugger-open": "^0.3.25",
+    "redux-devtools-extension": "^2.13.9"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -21,7 +25,8 @@
     "eslint": "^8.33.0",
     "jest": "^29.4.1",
     "metro-react-native-babel-preset": "^0.74.1",
-    "react-test-renderer": "17.0.2"
+    "react-test-renderer": "17.0.2",
+    "reactotron-react-native": "^5.0.3"
   },
   "jest": {
     "preset": "react-native"
@@ -30,5 +35,5 @@
   "main": "index.js",
   "repository": "https://github.com/hyeonmyung/rn-boilerplate.git",
   "author": "xeptember",
-  "license": "MIT"
+  "license": "Open license"
 }
