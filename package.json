@@ -1,5 +1,5 @@
 {
-  "name": "rn_boilerplate",
+  "name": "@xeptember/react-native",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -25,5 +25,10 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "description": "Initial development and build setup completed",
+  "main": "index.js",
+  "repository": "https://github.com/hyeonmyung/rn-boilerplate.git",
+  "author": "xeptember",
+  "license": "MIT"
 }
