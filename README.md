@@ -6,16 +6,16 @@ Initial development and build setup completed
 
 ```
 node v16.19.0
-react 17.0.2
+react v17.0.2
 react-native v0.68.2
 ```
 
 ## 개발 커맨드
 
-- `$ yarn start`
-- `$ yarn ios`
-- `$ yarn android`
-- `$ yarn postinstall` : debugger open
+- `yarn start`
+- `yarn ios`
+- `yarn android`
+- `yarn postinstall` : debugger open
 
 ## 확인된 빌드 에러
 
@@ -43,24 +43,22 @@ PhaseScriptExecution error (in target 'FBReactNativeSpec' from project 'Pods')
 
 ## Inspector
 
-`$ yarn global add react-devtools` or `$ yarn add --dev react-devtools`
+`yarn global add react-devtools` or `yarn add --dev react-devtools`
 
-`$ react-devtools`
+`react-devtools`
 
 iOS 시뮬레이터 cmd + d > Show inspector
 
-## Reactoron
+## Reactotron
 
-1. Reactoron 다운로드 (https://github.com/infinitered/reactotron/releases)
-2. 프로젝트에 reactoron 설치 `$ yarn add -D reactotron-react-native`
-3. root 경로에 `reactoron.config.js` 생성
+1. Reactotron 다운로드 (https://github.com/infinitered/reactotron/releases)
+2. 프로젝트에 reactotron 설치 `$ yarn add -D reactotron-react-native`
+3. root 경로에 `reactotron.config.js` 생성
 
 ```javascript
 import Reactotron from 'reactotron-react-native';
 
-Reactotron.configure() // controls connection & communication settings
-  .useReactNative() // add all built-in react native plugins
-  .connect(); // let's connect!
+Reactotron.configure().useReactNative().connect();
 ```
 
 4. index.js에 아래 코드 추가
