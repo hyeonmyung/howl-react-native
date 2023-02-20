@@ -12,10 +12,8 @@ react-native v0.68.2
 
 ### 타입스크립트 패키지 설치 (cli 에러로 개별설치)
 
-`yarn add -d typescript @types/react --save`
-
-`yarn add -d typescript @types/react-native --save`
-
+- `yarn add -d typescript @types/react --save`
+- `yarn add -d typescript @types/react-native --save`
 - [React Native에서 TypeScript 사용하기](https://dev-yakuza.posstree.com/ko/react-native/typescript/)
 - [React Native 프로젝트 살펴보기](https://devbksheen.tistory.com/entry/React-Native-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0)
 
@@ -41,12 +39,12 @@ Command PhaseScriptExecution failed with a nonzero exit code
 PhaseScriptExecution error (in target 'FBReactNativeSpec' from project 'Pods')
 ```
 
-1. `$ nvm install default `
-2. `$ nvm ls`로 설치된 버전 목록들 중 v16 확인
-3. `$ nvm use v16.x.x`
-4. `$ nvm alias default v16.x.x`
+1. `nvm install default `
+2. `nvm ls`로 설치된 버전 목록들 중 v16 확인
+3. `nvm use v16.x.x`
+4. `nvm alias default v16.x.x`
    (nvm v16.x.x로 변경하여 디폴트 버전으로 설정)
-5. `$ yarn ios`
+5. `yarn ios`
 
 [[React Native] PhaseScriptExecution error (in target 'FBReactNativeSpec' from project 'Pods')](https://velog.io/@jw4185/React-Native-PhaseScriptExecution-error-in-target-FBReactNativeSpec-from-project-Pods)
 
