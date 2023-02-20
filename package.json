@@ -14,7 +14,7 @@
     "@creativehill-labs/eslint-config-creativehill": "^0.1.1",
     "@reduxjs/toolkit": "^1.9.2",
     "@types/react": "17.0.2",
-    "@types/react-native": "0.68.2",
+    "@types/react-native": "^0.71.3",
     "react": "17.0.2",
     "react-native": "0.68.2",
     "react-native-debugger-open": "^0.3.25",
