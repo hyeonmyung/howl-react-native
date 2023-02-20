@@ -10,6 +10,15 @@ react v17.0.2
 react-native v0.68.2
 ```
 
+### 타입스크립트 패키지 설치 (cli 에러로 개별설치)
+
+`yarn add -d typescript @types/react --save`
+
+`yarn add -d typescript @types/react-native --save`
+
+- [React Native에서 TypeScript 사용하기](https://dev-yakuza.posstree.com/ko/react-native/typescript/)
+- [React Native 프로젝트 살펴보기](https://devbksheen.tistory.com/entry/React-Native-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0)
+
 ## 개발 커맨드
 
 - `yarn start`
