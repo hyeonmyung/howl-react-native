@@ -17,6 +17,51 @@ react-native v0.68.2
 - [React Native에서 TypeScript 사용하기](https://dev-yakuza.posstree.com/ko/react-native/typescript/)
 - [React Native 프로젝트 살펴보기](https://devbksheen.tistory.com/entry/React-Native-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0)
 
+## 라우팅
+
+- [React Native 내비게이션 및 Hooks 익히기](https://code-masterjung.tistory.com/126)
+
+```
+yarn add @react-navigation/native
+yarn add react-native-screens react-native-safe-area-context
+yarn add @react-navigation/native-stack
+```
+
+```
+cd ios
+pod install
+```
+
+```javascript
+const App = () => {
+  const Stack = createNativeStackNavigator();
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={컴포넌트명} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+```
+
+```javascript
+const HomeScreen = ({navigation}) => {
+  return (
+    <View>
+      <Button
+        title="페이지 이동"
+        onPress={() => navigation.navigate(`Detail`)}
+        // 또는
+        // onPress={() => navigation.push(`Detail`)}
+      >
+    </View>
+  )
+}
+
+export default HomeScreen;
+```
+
 ## 개발 커맨드
 
 - `yarn start`
