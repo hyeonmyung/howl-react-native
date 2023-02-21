@@ -1,12 +1,5 @@
 module.exports = {
-  plugins: [
-    'react',
-    'react-hooks',
-    'import',
-    'unused-imports',
-    'jest',
-    'prettier',
-  ],
+  plugins: ['react', 'react-hooks', 'import', 'unused-imports', 'prettier'],
   extends: [
     'plugin:react/recommended',
     'airbnb',
