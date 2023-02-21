@@ -17,17 +17,38 @@ react-native v0.68.2
 - [React Native에서 TypeScript 사용하기](https://dev-yakuza.posstree.com/ko/react-native/typescript/)
 - [React Native 프로젝트 살펴보기](https://devbksheen.tistory.com/entry/React-Native-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0)
 
+## 개발 커맨드
+
+- `yarn start`
+- `yarn ios`
+- `yarn android`
+- `yarn postinstall` : debugger open
+
+# 디렉토리 구조
+
+```bash
+├── src/
+│   ├── assets/                - 에셋 폴더 (이미지, 동영상.. 등)
+│   ├── components/            - 로우레벨 컴포넌트 : 범용 컴포넌트 (Input, Title, Section ... 등)
+│   ├── features/              - Redux Toolkit 기능단위 저장소
+│   ├── helpers/               - 헬퍼 함수 (함수단위)
+│   ├── hooks/                 - 커스텀 훅
+│   ├── screens/               - 페이지 컴포넌트 (URL과 1:1)
+│   ├── partials/              - 하이레벨 컴포넌트 : 특정 페이지 또는 부분에만 쓰이거나, 비즈니스 로직이 포함된 컴포넌트 (IntroBox, Header... 등)
+│   ├── providers/             - 커스텀 Provider
+```
+
 ## 라우팅
 
 - [React Native 내비게이션 및 Hooks 익히기](https://code-masterjung.tistory.com/126)
 
-```
+```bash
 yarn add @react-navigation/native
 yarn add react-native-screens react-native-safe-area-context
 yarn add @react-navigation/native-stack
 ```
 
-```
+```bash
 cd ios
 pod install
 ```
@@ -62,14 +83,22 @@ const HomeScreen = ({navigation}) => {
 export default HomeScreen;
 ```
 
-## 개발 커맨드
-
-- `yarn start`
-- `yarn ios`
-- `yarn android`
-- `yarn postinstall` : debugger open
-
 ## 확인된 빌드 에러
+
+### watchman 권한 에러
+
+https://github.com/facebook/watchman/issues/977
+
+```
+...
+Operation not permitted. Make sure watchman is running for this project. See https://facebook.github.io/watchman/docs/troubleshooting.
+...
+```
+
+```bash
+watchman watch-del-all
+watchman shutdown-server
+```
 
 ### iOS
 
@@ -104,7 +133,7 @@ iOS 시뮬레이터 cmd + d > Show inspector
 ## Reactotron
 
 1. Reactotron 다운로드 (https://github.com/infinitered/reactotron/releases)
-2. 프로젝트에 reactotron 설치 `$ yarn add -D reactotron-react-native`
+2. 프로젝트에 reactotron 설치 `yarn add -D reactotron-react-native`
 3. root 경로에 `reactotron.config.js` 생성
 
 ```javascript
@@ -113,7 +142,7 @@ import Reactotron from 'reactotron-react-native';
 Reactotron.configure().useReactNative().connect();
 ```
 
-4. index.js에 아래 코드 추가
+4. index.tsx에 아래 코드 추가
 
 ```javascript
 if (__DEV__) {
