@@ -40,7 +40,7 @@ react-native v0.68.2
 
 ## 라우팅
 
-- [ReactNatigation 공식문서](https://reactnavigation.org/docs/getting-started)
+- [ReactNavigation 공식문서](https://reactnavigation.org/docs/getting-started)
 - [React Native 내비게이션 및 Hooks 익히기](https://code-masterjung.tistory.com/126)
 
 ```bash
