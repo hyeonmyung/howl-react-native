@@ -40,6 +40,7 @@ react-native v0.68.2
 
 ## 라우팅
 
+- [⭐️[React Native with TS] 타입스크립트로 리액트네이티브 boilder plate 만들기 (2)스택네비게이션 만들기 (React Navigation 5.0+)](https://velog.io/@ant-now/React-Native-with-TS-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-boilder-plate-%EB%A7%8C%EB%93%A4%EA%B8%B0-2%EC%8A%A4%ED%83%9D%EB%84%A4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98-%EB%A7%8C%EB%93%A4%EA%B8%B0-React-Navigation-5.0)
 - [ReactNavigation 공식문서](https://reactnavigation.org/docs/getting-started)
 - [React Native 내비게이션 및 Hooks 익히기](https://code-masterjung.tistory.com/126)
 
