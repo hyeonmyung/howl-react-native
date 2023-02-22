@@ -1,8 +1,6 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import StayScreen from '../../screens/StayScreen';
-import StayDetailScreen from '../../screens/StayScreen/detail';
-import {NavigationContainer} from '@react-navigation/native';
 
 export enum StayScreens {
   StayHome = 'StayHome',

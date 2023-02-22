@@ -1,7 +1,8 @@
-import FlexCenterSection from '../../components/FlexCenterSection';
-import {Button, SafeAreaView, Text} from 'react-native';
+import {Text} from 'react-native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {HomeStackParamList} from '../../navigators/HomeStackNavigators';
+import InnerSection from '../../components/InnerSection';
+import FlexCenterSection from '../../components/FlexCenterSection';
 
 // MainScreen 에 필요한 파라미터들을 StackNavigationProp 으로 타입 명시해준다.
 type MainScreenNavigationProps = StackNavigationProp<HomeStackParamList>; // navigators/HomeStackNavigators/index.tsx 에서 지정했던 HomeStackParamList
@@ -15,11 +16,11 @@ interface MainScreenProps {
 const HomeScreen: React.FunctionComponent<MainScreenProps> = props => {
   const {navigation} = props;
   return (
-    <SafeAreaView>
-      <FlexCenterSection>
+    <FlexCenterSection>
+      <InnerSection>
         <Text>Home Screen</Text>
-      </FlexCenterSection>
-    </SafeAreaView>
+      </InnerSection>
+    </FlexCenterSection>
   );
 };
 export default HomeScreen;
