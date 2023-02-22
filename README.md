@@ -55,36 +55,6 @@ cd ios
 pod install
 ```
 
-```javascript
-const App = () => {
-  const Stack = createNativeStackNavigator();
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={컴포넌트명} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-};
-```
-
-```javascript
-const HomeScreen = ({navigation}) => {
-  return (
-    <View>
-      <Button
-        title="페이지 이동"
-        onPress={() => navigation.navigate(`Detail`)}
-        // 또는
-        // onPress={() => navigation.push(`Detail`)}
-      >
-    </View>
-  )
-}
-
-export default HomeScreen;
-```
-
 ## 확인된 빌드 에러
 
 ### watchman 권한 에러

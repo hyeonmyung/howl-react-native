@@ -1,7 +1,8 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import StayScreen from '../../screens/StayScreen';
-import StayDetailScreen from '../../screens/StayDetailScreen';
+import StayDetailScreen from '../../screens/StayScreen/detail';
+import {NavigationContainer} from '@react-navigation/native';
 
 export enum StayScreens {
   StayHome = 'StayHome',
@@ -14,15 +15,15 @@ export type StayStackParamList = {
 };
 
 const StayStack = createStackNavigator<StayStackParamList>();
-const HomeStackNavigator: React.FunctionComponent = () => {
+const StayStackNavigator: React.FunctionComponent = () => {
   return (
     <StayStack.Navigator>
-      <StayStack.Screen name={StayScreens.StayHome} component={StayScreen} />
       <StayStack.Screen
-        name={StayScreens.StayDetail}
-        component={StayDetailScreen}
+        name={StayScreens.StayHome}
+        component={StayScreen}
+        options={{headerShown: false}}
       />
     </StayStack.Navigator>
   );
 };
-export default HomeStackNavigator;
+export default StayStackNavigator;

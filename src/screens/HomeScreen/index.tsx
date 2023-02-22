@@ -1,10 +1,7 @@
 import FlexCenterSection from '../../components/FlexCenterSection';
 import {Button, SafeAreaView, Text} from 'react-native';
 import {StackNavigationProp} from '@react-navigation/stack';
-import {
-  HomeStackParamList,
-  HomeScreens,
-} from '../../navigators/HomeStackNavigators';
+import {HomeStackParamList} from '../../navigators/HomeStackNavigators';
 
 // MainScreen 에 필요한 파라미터들을 StackNavigationProp 으로 타입 명시해준다.
 type MainScreenNavigationProps = StackNavigationProp<HomeStackParamList>; // navigators/HomeStackNavigators/index.tsx 에서 지정했던 HomeStackParamList

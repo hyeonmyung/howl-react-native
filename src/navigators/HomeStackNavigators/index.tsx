@@ -21,6 +21,7 @@ const HomeStackNavigator: React.FunctionComponent = () => {
       <HomeStack.Screen
         name={HomeScreens.Home} // 처음에 enum 으로 지정했던 HomeScreens 에서 맞는 컴포넌트명을 가져온다.
         component={HomeScreen} // 실제 보여주게 될 컴포넌트
+        options={{headerShown: false}}
       />
     </HomeStack.Navigator>
   );

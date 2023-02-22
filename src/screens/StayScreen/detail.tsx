@@ -5,7 +5,7 @@ import {Text} from 'react-native';
 const StayDetailScreen: FC = () => {
   return (
     <FlexCenterSection>
-      <Text>Stay Detail Page</Text>
+      <Text>Stay Detail Screen</Text>
     </FlexCenterSection>
   );
 };

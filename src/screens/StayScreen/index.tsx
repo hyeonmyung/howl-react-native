@@ -1,7 +1,7 @@
 import FlexCenterSection from '../../components/FlexCenterSection';
 import {Button, SafeAreaView, Text} from 'react-native';
 import {StackNavigationProp} from '@react-navigation/stack';
-import {
+import StayStackNavigator, {
   StayScreens,
   StayStackParamList,
 } from '../../navigators/StayStackNavigators';
@@ -10,23 +10,20 @@ import {
 type StayScreenNavigationProps = StackNavigationProp<
   StayStackParamList,
   StayScreens.StayDetail
->; // navigators/HomeStackNavigators/index.tsx 에서 지정했던 HomeStackParamList
+>;
 
-// MainScreenProps 에 대한 인터페이스 지정
-// 인터페이스: 객체의 타입을 정의할 수 있게 하는 것
 interface StayScreenProps {
-  navigation: StayScreenNavigationProps; // 네비게이션 속서에 대한 타입으로 방금 지정해주었던 MainScreenNavigationProps 을 지정
+  navigation: StayScreenNavigationProps;
 }
 
-const StayScreen: React.FunctionComponent<StayScreenProps> = props => {
-  const {navigation} = props;
+const StayScreen: React.FunctionComponent<StayScreenProps> = ({navigation}) => {
   return (
     <SafeAreaView>
       <FlexCenterSection>
         <Text>Stay Screen</Text>
         <Button
-          title="페이지 이동"
-          onPress={() => navigation.navigate(StayScreens.StayDetail)}
+          title="상세 페이지 이동 (하단 탭 없음)"
+          onPress={() => navigation.navigate(`StayDetail`)}
         />
       </FlexCenterSection>
     </SafeAreaView>
