@@ -33,7 +33,7 @@ react-native v0.68.2
 │   ├── features/              - Redux Toolkit 기능단위 저장소
 │   ├── helpers/               - 헬퍼 함수 (함수단위)
 │   ├── navigators/            - React Navigator 라우팅 설정
-│   ├── screens/               - 페이지 컴포넌트 (URL과 1:1)
+│   ├── screens/               - 페이지 컴포넌트 (하단 탭 기준으로 디렉토리 구분)
 │   ├── partials/              - 하이레벨 컴포넌트 : 특정 페이지 또는 부분에만 쓰이거나, 비즈니스 로직이 포함된 컴포넌트 (IntroBox, Header... 등)
 │   ├── providers/             - 커스텀 Provider
 ```
